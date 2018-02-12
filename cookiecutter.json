@@ -1,0 +1,12 @@
+{
+  "app_name": "MyApplication",
+  "package_name": "com.username.myapp",
+  "feature_name": "Feature",
+  "feature_dir_name": "{{ cookiecutter.feature_name | lower }}",
+  "package_dir": "{{ cookiecutter.package_name | replace('.', '/') }}",
+  "_copy_without_render": [
+    "gradlew",
+    "gradlew.bat",
+    "gradle/wrapper/gradle-wrapper.jar"
+  ]
+}
